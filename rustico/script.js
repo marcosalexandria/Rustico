@@ -5,8 +5,8 @@ logo.style.fontSize="2em";
 let amostra=document.getElementById("amostra"); //imagem do pedido
 let meuPedido=document.getElementById("meuPedido"); //hambuguer
 let adicinais=document.getElementsByClassName("incremento"); //adicionais
-let acomp=document.getElementsByClassName("buttonsC");
-let acompanhamentos="";
+let acomp=document.getElementsByClassName("buttonsC");  //buttons dos acompanhamentos
+let acompanhamentos=""; //vai receber o acompanhamento escolido
 let finalizar=document.getElementById("finalizar"); //botão finalizar
 
 //mostra a imagem do hamburguer, conforme escolha do cliente
