@@ -5,7 +5,8 @@ logo.style.fontSize="2em";
 let amostra=document.getElementById("amostra"); //imagem do pedido
 let meuPedido=document.getElementById("meuPedido"); //hambuguer
 let adicinais=document.getElementsByClassName("incremento"); //adicionais
-
+let acomp=document.getElementsByClassName("buttonsC");
+let acompanhamentos="";
 let finalizar=document.getElementById("finalizar"); //botão finalizar
 
 //mostra a imagem do hamburguer, conforme escolha do cliente
@@ -21,6 +22,20 @@ let ver=setInterval(function(){
     }
 },300);
 
+//Escolhendo o acompanhamento
+for(let i=0;i<acomp.length;i++){
+    acomp[i].addEventListener("click", function(){
+        if(i==0){
+            acompanhamentos="Combo";
+        }else if(i==1){
+            acompanhamentos="Hamburguer + Batata";
+        }else if(i==2){
+            acompanhamentos="Hamburguer + Refrigerante";
+        }else if(i==3){
+            acompanhamentos="Avulso"
+        }
+    })
+}
 
 
 //Função que mostra os dados do pedido depois de finalizado
@@ -48,4 +63,7 @@ finalizar.addEventListener("click", function(){
     if(adicinais[3].checked==true){
         incrementos.push("Molho");
     }
+    console.log(hambuger);
+    console.log(incrementos);
+    console.log(acompanhamentos);
 })
