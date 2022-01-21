@@ -8,6 +8,7 @@ let adicinais=document.getElementsByClassName("incremento"); //adicionais
 let acomp=document.getElementsByClassName("buttonsC");  //buttons dos acompanhamentos
 let acompanhamentos=""; //vai receber o acompanhamento escolido
 let finalizar=document.getElementById("finalizar"); //botão finalizar
+let nota=document.getElementById("nota");
 
 //mostra a imagem do hamburguer, conforme escolha do cliente
 let ver=setInterval(function(){
@@ -63,7 +64,6 @@ finalizar.addEventListener("click", function(){
     if(adicinais[3].checked==true){
         incrementos.push("Molho");
     }
-    console.log(hambuger);
-    console.log(incrementos);
-    console.log(acompanhamentos);
+    
+    nota.innerHTML=hambuger+"<br>"+incrementos+"<br>"+acompanhamentos;
 })
