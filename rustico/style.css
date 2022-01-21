@@ -7,6 +7,7 @@
 header{
     background-color: black;
     color: white;
+    flex-wrap: wrap;
 }
 
 header a{
@@ -50,9 +51,9 @@ header a{
 .campos{
     margin: 10px;
     text-align: center;
-    width: 200px;
+    min-width: 20%;
     height: 30px;
-    font-size: 1.2em;
+
     border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.739);
     color: white;
