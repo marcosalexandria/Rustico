@@ -1,0 +1,105 @@
+@font-face {
+    font-family: rustic;
+    src: url(fontes/Western\ Bang\ Bang.otf);
+}
+
+/*Cabeçalho*/
+header{
+    background-color: black;
+    color: white;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/*Barra de whatsapp e APP*/
+#wp{
+    width: 20px;
+    height: 20px;
+}
+#lwp{
+    color: rgb(13, 207, 13);
+}
+
+/*Carosel*/
+#carouselExampleIndicators{
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.739);
+}
+
+/* corpo*/
+
+
+.tH2{
+    text-align: center;
+    font-family: rustic;
+    text-decoration: underline;
+    margin: 10px;
+}
+#pedido{
+    text-align: center;
+}
+
+#amostra{
+    max-width: 25%;
+
+}
+
+.campos{
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.739);
+    color: white;
+}
+
+#adicionais{
+    font-size: 1.2em;
+    max-width: 300px;
+    margin: auto;
+}
+
+.radio{
+    margin: 20px;
+    font-family: rustic;
+    color: rgb(228, 148, 0);
+    font-size: 1.2em;
+}
+
+.acompanhamentos{
+    width: 50px;
+    margin: 10px;
+}
+.combo{
+    max-width: 300px;
+    margin: auto;
+    border: 2px solid;
+    border-radius: 15px 0px;
+    margin-bottom: 10px;
+}
+
+
+.pCombo{
+    font-family: rustic;
+    color: rgb(228, 148, 0);
+    font-size: 1.2em;
+}
+
+.buttons{
+    margin: 10px;
+    font-family: rustic;
+    font-size: 1.3em;
+}
+.buttonsC{
+    color: rgb(228, 148, 0);
+    margin: 10px;
+    font-family: rustic;
+    font-size: 1.3em;
+}
+
+/*roda-pé*/
