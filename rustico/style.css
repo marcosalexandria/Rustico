@@ -103,4 +103,11 @@ header a{
     font-size: 1.3em;
 }
 
+#res{
+    margin: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 300px;
+    padding: 10px;
+}
 /*roda-pé*/

@@ -8,7 +8,7 @@ let adicinais=document.getElementsByClassName("incremento"); //adicionais
 let acomp=document.getElementsByClassName("buttonsC");  //buttons dos acompanhamentos
 let acompanhamentos=""; //vai receber o acompanhamento escolido
 let finalizar=document.getElementById("finalizar"); //botão finalizar
-let nota=document.getElementById("nota");
+let res=document.getElementById("res"); //seção que entrega o pedido
 
 //mostra a imagem do hamburguer, conforme escolha do cliente
 let ver=setInterval(function(){
@@ -64,6 +64,10 @@ finalizar.addEventListener("click", function(){
     if(adicinais[3].checked==true){
         incrementos.push("Molho");
     }
-    
-    nota.innerHTML=hambuger+"<br>"+incrementos+"<br>"+acompanhamentos;
+
+    res.innerHTML=`<strong>*Nota*
+    </strong><br>Hambuguer: <strong>${hambuger}</strong><br>
+    Com <strong>${incrementos}</strong><br>
+    <strong>(${acompanhamentos})</strong>`;
+    res.style.border="solid rgb(228, 148, 0)"
 })
