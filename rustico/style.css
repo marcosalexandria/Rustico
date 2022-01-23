@@ -31,7 +31,12 @@ header a{
 }
 
 /* corpo*/
-
+main{
+    margin-bottom: 5px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 4px 4px 5px black;
+    
+}
 
 .tH2{
     text-align: center;
@@ -110,4 +115,14 @@ header a{
     max-width: 300px;
     padding: 10px;
 }
+
 /*roda-pé*/
+footer{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+footer h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
