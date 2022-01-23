@@ -9,6 +9,7 @@ let acomp=document.getElementsByClassName("buttonsC");  //buttons dos acompanham
 let acompanhamentos=""; //vai receber o acompanhamento escolido
 let finalizar=document.getElementById("finalizar"); //botão finalizar
 let res=document.getElementById("res"); //seção que entrega o pedido
+let preco;
 
 //mostra a imagem do hamburguer, conforme escolha do cliente
 let ver=setInterval(function(){
@@ -28,12 +29,16 @@ for(let i=0;i<acomp.length;i++){
     acomp[i].addEventListener("click", function(){
         if(i==0){
             acompanhamentos="Combo";
+            preco=27.50;
         }else if(i==1){
             acompanhamentos="Hamburguer + Batata";
+            preco=17.30;
         }else if(i==2){
             acompanhamentos="Hamburguer + Refrigerante";
+            preco=15;
         }else if(i==3){
             acompanhamentos="Avulso"
+            preco=9;
         }
     })
 }
@@ -54,20 +59,27 @@ finalizar.addEventListener("click", function(){
     //adicionais
     if(adicinais[0].checked==true){
         incrementos.push("Muçarela");
+        preco+=2.50;
     }
     if(adicinais[1].checked==true){
         incrementos.push("Bacon");
+        preco+=3;
     }
     if(adicinais[2].checked==true){
         incrementos.push("Cheddar");
+        preco+=2.50;
     }
     if(adicinais[3].checked==true){
         incrementos.push("Molho");
+        preco+=2.50.toExponential;
     }
 
     res.innerHTML=`<strong>*Nota*
     </strong><br>Hambuguer: <strong>${hambuger}</strong><br>
     Com <strong>${incrementos}</strong><br>
-    <strong>(${acompanhamentos})</strong>`;
+    <strong>(${acompanhamentos})</strong><br>
+    <strong>TOTAL: R$${preco.toFixed(2)}</strong>`;
     res.style.border="solid rgb(228, 148, 0)"
+
+    console.log(preco)
 })
