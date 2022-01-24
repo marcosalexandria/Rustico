@@ -49,13 +49,16 @@ finalizar.addEventListener("click", function(){
     //hamburguer
     let hambuger="";
     let incrementos=[];
+
     if(meuPedido.value=="twistter"){
         hambuger="Twistter";
     }else if(meuPedido.value=="gran-burger"){
         hambuger="Gran-Burger";
     }else if(meuPedido.value=="gourmet"){
         hambuger="Gurmet";
-    };
+    }else if(hambuger==""){
+        alert("ERRO, Selecione um hamburguer");
+    }
     //adicionais
     if(adicinais[0].checked==true){
         incrementos.push("Muçarela");
